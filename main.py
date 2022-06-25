@@ -30,7 +30,7 @@ class menu():
 		
 		print(f"""=> Status : {status}\n""")
 		print(f"""=> Domain Ip : {sc}\n""")
-		print(f"""=> Judul : {title}\n""")
+		print(f"""=> Titel : {title}\n""")
 		print(f"""=> Deskripsi : {description}\n""")
 		print(f"""=> Bahasa : {lang}\n""")
 		print(f"""=> Author : {author}\n""")
