@@ -7,7 +7,7 @@ import socket
 	
 class menu():
 	def mn1():
-		#subprocess.run("clear")
+		subprocess.run("clear")
 		prop.menu1()
 		iw = input("Masukkan Website : ")
 		rep = iw.replace("https://","")
@@ -37,7 +37,7 @@ class menu():
 		print(f"""=> Publisher : {publisher}\n""")
 		
 	def mn2():
-		#subprocess.run("clear")
+		subprocess.run("clear")
 		prop.menu2()
 		icma = input("Masukkan MAC Address : ")
 		u2 = conn.connect_2 + icma
