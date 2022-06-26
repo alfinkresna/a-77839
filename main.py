@@ -67,12 +67,12 @@ class menu():
 		prop.menu3()
 		inm = input("Masukkan Nomor Telepon : ")
 		phone = phonenumbers.parse(inm)
-		Country_Code = phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.INTERNATIONAL).split(' ')[0]
-		local_Number = phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164).replace(Country_Code, '')
+		countryCode = phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.INTERNATIONAL).split(' ')[0]
+		local_Number = phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164).replace(countryCode, '')
 		international_Number = phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.INTERNATIONAL)
 		print('\nFormat Internasional : {}'.format(international_Number))
 		print('\nFormat Lokal : 0{}'.format(local_Number))
-		print('\nKode Negara : {}'.format(Country_Code))
+		print('\nKode Negara : {}'.format(countryCode))
 		print('\nLokasi : {}'.format(geocoder.description_for_number(phone, 'id')))
 		print('\nProvider : {}'.format(carrier.name_for_number(phone, 'id')))
 		print('\nArea : {}'.format(geocoder.description_for_number(phone, 'id')))
